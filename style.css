@@ -148,7 +148,7 @@ i{
 @media(max-width:790px){
     .about{
         display: grid;
-        grid-template-rows: 10px 300px 300px 100px 20px;
+        grid-template-rows: 10px 300px 30px 70px 20px;
         grid-template-columns: auto;
         grid-row-gap: 0px;
         grid-column-gap: 0px;
@@ -160,7 +160,14 @@ i{
         "svg-bottom"
     }
     .image-svg{
+        display: none;
         margin-top: 115px !important;
+    }
+    .svg{
+        display: none;
+    }
+    .svg-bottom{
+        display: none;
     }
     .header-name h4{
         font-size: 13px !important;
