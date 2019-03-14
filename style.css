@@ -1,0 +1,177 @@
+body{
+    margin: 10px;
+}
+
+div{
+    background: transparent;
+}
+
+.header-image{
+    grid-area: image;
+}
+
+.header-name{
+    grid-area: name
+}
+
+.header-name h4{
+    font-size: 20px !important;
+}
+
+.header{
+    background: #646464;
+    background-image: url('./assets/pacctzsuaryc1nthibw7.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 10vw auto 10vw;
+    grid-template-rows: 30px 260px 100px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-areas:
+    ". . ." 
+    ". image ."
+    ". name ."
+}
+
+.about-text{
+    grid-area: about-text;
+}
+
+.image-svg{
+    margin-top: 0px !important;
+    grid-area: img-svg;
+    background: url('./assets/home_page_tree.png');
+    background-repeat: no-repeat;
+}
+
+.svg{
+    grid-area: svg;
+}
+
+.svg-bottom{
+    grid-area: svg-bottom;
+    background: black !important;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 0px;
+}
+
+.about{
+    display: grid;
+    grid-template-rows: 10px 350px 200px 10px;
+    grid-template-columns: 10vw 530px auto 440px 10vw;
+    grid-row-gap: 0px;
+    grid-column-gap: 10px;
+    grid-template-areas:
+    ". . . . ."
+    ". about-text . img-svg ."
+    "svg svg svg svg svg"
+    "svg-bottom svg-bottom svg-bottom svg-bottom svg-bottom"
+}
+
+.projects{
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin-top: 28px;
+}
+
+.items{
+    background: red;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+i{
+    color: indigo;
+    font-size: 19px;
+    padding: 4px;
+}
+
+@media(max-width:1300px){
+    .about{
+        display: grid;
+        grid-template-rows: 10px 350px 200px 10px;
+        grid-template-columns: 1px 530px auto 1px;
+        grid-row-gap: 0px;
+        grid-column-gap: 10px;
+        grid-template-areas:
+        ". . . ."
+        ". about-text img-svg ."
+        "svg svg svg svg"
+        "svg-bottom svg-bottom svg-bottom svg-bottom"
+    }
+}
+
+@media(max-width:1020px){
+    .about{
+        display: grid;
+        grid-template-rows: 10px 350px 200px 10px;
+        grid-template-columns: 530px auto 2px;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        grid-template-areas:
+        ". . ."
+        "about-text img-svg ."
+        "svg svg svg"
+        "svg-bottom svg-bottom svg-bottom"
+    }
+}
+
+@media(max-width:990px){
+    .about{
+        display: grid;
+        grid-template-rows: 10px 350px 200px 10px;
+        grid-template-columns: 330px auto;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        grid-template-areas:
+        ". ."
+        "about-text img-svg"
+        "svg svg"
+        "svg-bottom svg-bottom"
+    }
+
+    .projects{
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        margin-top: 28px;
+    }
+
+}
+
+@media(max-width:790px){
+    .about{
+        display: grid;
+        grid-template-rows: 10px 300px 300px 100px 20px;
+        grid-template-columns: auto;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        grid-template-areas:
+        "."
+        "about-text"
+        "img-svg"
+        "svg"
+        "svg-bottom"
+    }
+    .image-svg{
+        margin-top: 115px !important;
+    }
+    .header-name h4{
+        font-size: 13px !important;
+    }
+
+    .projects{
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        margin-top: 28px;
+    }
+}
