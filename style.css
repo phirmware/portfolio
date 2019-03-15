@@ -199,6 +199,8 @@ i{
 }
 
 
+  /* media queries */
+
 @media(max-width:1300px){
     .about{
         display: grid;
